@@ -30,7 +30,7 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e) {
 
     }
-    protected void ASPxGlobalEvents1_ValidationCompleted(object sender, DevExpress.Web.ASPxGlobalEvents.ValidationCompletedEventArgs e) {
+    protected void ASPxGlobalEvents1_ValidationCompleted(object sender, DevExpress.Web.ValidationCompletedEventArgs e) {
         lErrorMessageNotEqual.ClientVisible = !tbPassword.Value.Equals(tbConfirmedPassword.Value);
     }
 }

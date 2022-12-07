@@ -31,7 +31,7 @@ Partial Public Class _Default
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
     End Sub
-    Protected Sub ASPxGlobalEvents1_ValidationCompleted(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGlobalEvents.ValidationCompletedEventArgs)
+    Protected Sub ASPxGlobalEvents1_ValidationCompleted(ByVal sender As Object, ByVal e As DevExpress.Web.ValidationCompletedEventArgs)
         lErrorMessageNotEqual.ClientVisible = Not tbPassword.Value.Equals(tbConfirmedPassword.Value)
     End Sub
 End Class
